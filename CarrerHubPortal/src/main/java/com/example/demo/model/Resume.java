@@ -21,7 +21,11 @@ public class Resume {
     private Integer resumeId;
 
     @Lob
-    @Column(name = "resume_data", nullable = false)
+    @Column(
+    name = "resume_data",
+    nullable = false,
+    columnDefinition = "LONGBLOB"
+)
     private byte[] resumeData;
 
     @Column(name = "resume_filename", nullable = false)
