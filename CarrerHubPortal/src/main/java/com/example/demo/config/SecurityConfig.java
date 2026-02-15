@@ -64,6 +64,7 @@ public class SecurityConfig {
 
            	    //  Public end points
             	     .requestMatchers("/auth/**").permitAll() // Allow login
+                      .requestMatchers("/health").permitAll()
 
             	   
            	    //  Role-based secured end points
@@ -107,3 +108,4 @@ public class SecurityConfig {
     
 
 }
+
